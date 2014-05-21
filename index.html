@@ -1,0 +1,58 @@
+<div class="example">
+<table class="CodeRay"><tbody><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+<a href="#n12" name="n12">12</a>
+<a href="#n13" name="n13">13</a>
+<a href="#n14" name="n14">14</a>
+<a href="#n15" name="n15">15</a>
+<a href="#n16" name="n16">16</a>
+<a href="#n17" name="n17">17</a>
+<a href="#n18" name="n18">18</a>
+<a href="#n19" name="n19">19</a>
+<strong><a href="#n20" name="n20">20</a></strong>
+<a href="#n21" name="n21">21</a>
+<a href="#n22" name="n22">22</a>
+<a href="#n23" name="n23">23</a>
+<a href="#n24" name="n24">24</a>
+<a href="#n25" name="n25">25</a>
+<a href="#n26" name="n26">26</a></pre></td>
+  <td class="code"><pre><span title="Comment" class="comment"># output as HTML div (using inline CSS styles)</span><span title="Space">
+</span><span title="Constant" class="constant">CodeRay</span><span title="Operator">.</span><span title="Ident">scan</span><span title="Operator">(</span><span title="String" class="string"><span title="String" class="delimiter">'</span><span title="String" class="content">puts "Hello, world!"</span><span title="String" class="delimiter">'</span></span><span title="Operator">,</span><span title="Space"> </span><span title="Symbol" class="symbol">:ruby</span><span title="Operator">)</span><span title="Operator">.</span><span title="Ident">div</span><span title="Space">
+</span><span title="Space">
+</span><span title="Comment" class="comment"># ...with line numbers</span><span title="Space">
+</span><span title="Constant" class="constant">CodeRay</span><span title="Operator">.</span><span title="Ident">scan</span><span title="Operator">(</span><span title="String" class="string"><span title="String" class="delimiter">"</span><span title="String" class="content">5.times do</span><span title="Char" class="char">\n</span><span title="String" class="content">  puts 'Hello, world!'</span><span title="Char" class="char">\n</span><span title="String" class="content">end</span><span title="String" class="delimiter">"</span></span><span title="Operator">,</span><span title="Space"> </span><span title="Symbol" class="symbol">:ruby</span><span title="Operator">)</span><span title="Operator">.</span><span title="Ident">div</span><span title="Operator">(</span><span title="Symbol" class="symbol">:line_numbers</span><span title="Space"> </span><span title="Operator">=</span><span title="Operator">&gt;</span><span title="Space"> </span><span title="Symbol" class="symbol">:table</span><span title="Operator">)</span><span title="Space">
+</span><span title="Space">
+</span><span title="Comment" class="comment"># output as standalone HTML page (using CSS classes)</span><span title="Space">
+</span><span title="Constant" class="constant">CodeRay</span><span title="Operator">.</span><span title="Ident">scan</span><span title="Operator">(</span><span title="String" class="string"><span title="String" class="delimiter">'</span><span title="String" class="content">puts "Hello, world!"</span><span title="String" class="delimiter">'</span></span><span title="Operator">,</span><span title="Space"> </span><span title="Symbol" class="symbol">:ruby</span><span title="Operator">)</span><span title="Operator">.</span><span title="Ident">page</span><span title="Space">
+</span><span title="Space">
+</span><span title="Comment" class="comment"># keep scanned tokens for later use</span><span title="Space">
+</span><span title="Ident">tokens</span><span title="Space"> </span><span title="Operator">=</span><span title="Space"> </span><span title="Constant" class="constant">CodeRay</span><span title="Operator">.</span><span title="Ident">scan</span><span title="Operator">(</span><span title="String" class="string"><span title="String" class="delimiter">'</span><span title="String" class="content">{ "just": "an", "example": 42 }</span><span title="String" class="delimiter">'</span></span><span title="Operator">,</span><span title="Space"> </span><span title="Symbol" class="symbol">:json</span><span title="Operator">)</span><span title="Space">
+</span><span title="Space">
+</span><span title="Comment" class="comment"># produce a token statistic</span><span title="Space">
+</span><span title="Ident">tokens</span><span title="Operator">.</span><span title="Ident">statistic</span><span title="Space">
+</span><span title="Space">
+</span><span title="Comment" class="comment"># count LoC (lines of code)</span><span title="Space">
+</span><span title="Constant" class="constant">CodeRay</span><span title="Operator">.</span><span title="Ident">scan</span><span title="Operator">(</span><span title="String" class="string"><span title="String" class="delimiter">"</span><span title="String" class="content"># comment</span><span title="Char" class="char">\n</span><span title="String" class="content">puts 'Hello, world!'</span><span title="String" class="delimiter">"</span></span><span title="Operator">,</span><span title="Space"> </span><span title="Symbol" class="symbol">:ruby</span><span title="Operator">)</span><span title="Operator">.</span><span title="Ident">loc</span><span title="Space">  </span><span title="Comment" class="comment"># =&gt; 1</span><span title="Space">
+</span><span title="Space">
+</span><span title="Comment" class="comment"># produce a HTML div, but with CSS classes</span><span title="Space">
+</span><span title="Ident">tokens</span><span title="Operator">.</span><span title="Ident">div</span><span title="Operator">(</span><span title="Symbol" class="symbol">:css</span><span title="Space"> </span><span title="Operator">=</span><span title="Operator">&gt;</span><span title="Space"> </span><span title="Symbol" class="symbol">:class</span><span title="Operator">)</span><span title="Space">
+</span><span title="Space">
+</span><span title="Comment" class="comment"># highlight a file (to HTML div); guess the file type base on the extension</span><span title="Space">
+</span><span title="Constant" class="constant">CodeRay</span><span title="Operator">.</span><span title="Ident">highlight_file</span><span title="Operator">(</span><span title="Predefined Constant" class="predefined-constant">__FILE__</span><span title="Operator">)</span><span title="Space">
+</span><span title="Space">
+</span><span title="Comment" class="comment"># re-using scanner and encoder with Duo</span><span title="Space">
+</span><span title="Constant" class="constant">CodeRay</span><span title="Operator">::</span><span title="Constant" class="constant">Duo</span><span title="Operator">[</span><span title="Symbol" class="symbol">:ruby</span><span title="Operator">,</span><span title="Space"> </span><span title="Symbol" class="symbol">:div</span><span title="Operator">]</span><span title="Operator">.</span><span title="Ident">encode</span><span title="Operator">(</span><span title="String" class="string"><span title="String" class="delimiter">'</span><span title="String" class="content">puts "Hello, world!"</span><span title="String" class="delimiter">'</span></span><span title="Operator">)</span><span title="Space">
+</span></pre></td>
+</tr></tbody></table>
+
+</div>
