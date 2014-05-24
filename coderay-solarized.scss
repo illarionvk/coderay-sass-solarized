@@ -70,23 +70,23 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
     width: 100%;
   }
   .code {
-   width: 100%;
+    width: 100%;
   }
   .debug {
-   color: white !important;
-   background: blue !important;
+    color: white !important;
+    background: blue !important;
   }
   .annotation {
-   color: #007;
+    color: #007;
   }
   .attribute-name {
-   color: #b48;
+    color: #b48;
   }
   .attribute-value {
-   color: #700;
+    color: #700;
   }
   .binary {
-   color: #549;
+    color: #549;
     .char {
      color: #325;
     }
@@ -94,36 +94,40 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
      color: #325;
     }
   }
+
+  .char {
+    color:#D20;
+    .content {
+      color:#D20;
+    }
+    .delimiter {
+     color:#710;
+    }
+  }
+
+  .class {
+    color:#B06;
+    font-weight:bold;
+    &-variable {
+     color:#369;
+    }
+  }
+
+  .color {
+    color:#0A0;
+  }
+
+  .comment {
+    color:#777;
+    .char {
+      color:#444;
+    }
+    .delimiter {
+      color:#444;
+    }
+  }
 }// .Coderay
 
-.char {
- color:#D20 
-}
-.char .content {
- color:#D20 
-}
-.char .delimiter {
- color:#710 
-}
-.class {
- color:#B06;
- font-weight:bold 
-}
-.class-variable {
- color:#369 
-}
-.color {
- color:#0A0 
-}
-.comment {
- color:#777 
-}
-.comment .char {
- color:#444 
-}
-.comment .delimiter {
- color:#444 
-}
 .constant {
  color:#036;
  font-weight:bold 
