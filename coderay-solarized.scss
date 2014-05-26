@@ -31,7 +31,7 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
 
 .CodeRay {
   .line-numbers {
-    background-color: hsl(180,65%,90%);
+    background-color: $base2;
     color: $base1;
     text-align: right;
     -webkit-user-select: none;
@@ -39,12 +39,12 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
     user-select: none;
 
     a {
-      background-color: hsl(180,65%,90%) !important;
-      color: gray !important;
+      background-color: $base2 !important;
+      color: $base1 !important;
       text-decoration: none !important;
 
       &:target {
-        color: blue !important;
+        color: $blue !important;
       }
     }
 
@@ -53,10 +53,10 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
     }
 
     .highlighted {
-      color: red !important;
+      color: $red !important;
 
       a {
-        color: red !important;
+        color: $red !important;
       }
     }
   }
@@ -73,32 +73,32 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
     width: 100%;
   }
   .debug {
-    color: white !important;
-    background: blue !important;
+    color: $base3 !important;
+    background: $blue !important;
   }
   .annotation {
-    color: #007;
+    color: $blue;
   }
   .attribute-name {
-    color: #b48;
+    color: $magenta;
   }
   .attribute-value {
-    color: #700;
+    color: $red;
   }
   .binary {
-    color: #549;
+    color: $violet;
     .char {
-     color: #325;
+     color: $violet;
     }
     .delimiter {
-     color: #325;
+     color: $violet;
     }
   }
 
   .char {
-    color:#D20;
+    color:$red;
     .content {
-      color:#D20;
+      color:$red;
     }
     .delimiter {
      color:#710;
@@ -221,87 +221,81 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
       color: #666;
     }
   }
+
+  .instance-variable {
+    color: #33B;
+  }
+
+  .integer {
+    color: #00D;
+  }
+
+  .imaginary {
+    color: #f00;
+  }
+
+  .important {
+    color: #D00;
+  }
+
+  .key {
+    color: #606;
+    .char {
+      color: #60f;
+    }
+    .delimiter {
+      color: #404;
+    }
+  }
+
+  .keyword {
+    color: #080;
+    font-weight: bold;
+  }
+
+  .label {
+    color: #970;
+    font-weight: bold;
+  }
+
+  .local-variable {
+    color: #950;
+  }
+
+  .map {
+    background-color: hsla(200,100%,50%,0.06);
+    .content {
+      color: #808;
+    }
+    .delimiter {
+      color: #40A;
+    }
+  }
+
+  .namespace {
+    color: #707;
+    font-weight: bold;
+  }
+
+  .octal {
+    color: #40E;
+  }
+
+  .operator {
+  }
+
+  .predefined {
+    color: #369;
+    font-weight: bold;
+    &-constant {
+      color: #069;
+    }
+    &-type {
+      color: #0a8;
+      font-weight: bold;
+    }
+  }
 }// .Coderay
-
-.instance-variable {
-  color: #33B;
-}
-
-.integer {
-  color: #00D;
-}
-
-.imaginary {
-  color: #f00;
-}
-
-.important {
-  color: #D00;
-}
-
-.key {
-  color: #606;
-}
-
-.key .char {
-  color: #60f;
-}
-
-.key .delimiter {
-  color: #404;
-}
-
-.keyword {
-  color: #080;
-  font-weight: bold;
-}
-
-.label {
-  color: #970;
-  font-weight: bold;
-}
-
-.local-variable {
-  color: #950;
-}
-
-.map .content {
-  color: #808;
-}
-
-.map .delimiter {
-  color: #40A;
-}
-
-.map {
-  background-color: hsla(200,100%,50%,0.06);
-}
-
-.namespace {
-  color: #707;
-  font-weight: bold;
-}
-
-.octal {
-  color: #40E;
-}
-
-.operator {
-}
-
-.predefined {
-  color: #369;
-  font-weight: bold;
-}
-
-.predefined-constant {
-  color: #069;
-}
-
-.predefined-type {
-  color: #0a8;
-  font-weight: bold;
-}
 
 .preprocessor {
   color: #579;
@@ -354,7 +348,7 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
 }
 
 .string .content {
-  color: #D20;
+  color: $red;
 }
 
 .string .delimiter {
@@ -405,7 +399,7 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
 
 .change {
   color: #bbf;
-  background: #007;
+  background: $blue;
 }
 
 .head {
