@@ -96,39 +96,39 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
   }
 
   .char {
-    color:$red;
+    color: $red;
     .content {
-      color:$red;
+      color: $red;
     }
     .delimiter {
-     color:#710;
+     color: $red;
     }
   }
 
   .class {
-    color:#B06;
+    color: $magenta;
     font-weight:bold;
     &-variable {
-     color:#369;
+     color: $blue;
     }
   }
 
   .color {
-    color:#0A0;
+    color: $green;
   }
 
   .comment {
-    color:#777;
+    color: $base1;
     .char {
-      color:#444;
+      color: $base00;
     }
     .delimiter {
-      color:#444;
+      color: $base00;
     }
   }
 
   .constant {
-    color: #036;
+    color: $blue;
     font-weight: bold;
   }
 
