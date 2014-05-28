@@ -358,82 +358,75 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
       color: #740;
     }
   }
+
+  .tag {
+    color: #070;
+    font-weight: bold;
+  }
+
+  .type {
+    color: #339;
+    font-weight: bold;
+  }
+
+  .value {
+    color: #088;
+  }
+
+  .variable {
+    color: #037;
+  }
+
+  .insert {
+    background: hsla(120,100%,50%,0.12);
+    .insert {
+      color: #0c0;
+      background: transparent;
+      font-weight: bold;
+    }
+    .eyecatcher {
+      background-color: hsla(120,100%,50%,0.2);
+      border: 1px solid hsla(120,100%,25%,0.5);
+      margin: -1px;
+      border-top: none;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+
+  .delete {
+    background: hsla(0,100%,50%,0.12);
+    .delete {
+      color: #c00;
+      background: transparent;
+      font-weight: bold;
+    }
+    .eyecatcher {
+      background-color: hsla(0,100%,50%,0.2);
+      border: 1px solid hsla(0,100%,45%,0.5);
+      margin: -1px;
+      border-bottom: none;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
+
+  .change {
+    color: #bbf;
+    background: $blue;
+    .change {
+      color: #88f;
+    }
+  }
+
+  .head {
+    color: #f8f;
+    background: #505;
+    .head {
+      color: #f4f;
+    }
+    .filename {
+      color: white;
+    }
+  }
 }// .Coderay
-
-.tag {
-  color: #070;
-  font-weight: bold;
-}
-
-.type {
-  color: #339;
-  font-weight: bold;
-}
-
-.value {
-  color: #088;
-}
-
-.variable {
-  color: #037;
-}
-
-.insert {
-  background: hsla(120,100%,50%,0.12);
-}
-
-.delete {
-  background: hsla(0,100%,50%,0.12);
-}
-
-.change {
-  color: #bbf;
-  background: $blue;
-}
-
-.head {
-  color: #f8f;
-  background: #505;
-}
-
-.head .filename {
-  color: white;
-}
-
-.delete .eyecatcher {
-  background-color: hsla(0,100%,50%,0.2);
-  border: 1px solid hsla(0,100%,45%,0.5);
-  margin: -1px;
-  border-bottom: none;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.insert .eyecatcher {
-  background-color: hsla(120,100%,50%,0.2);
-  border: 1px solid hsla(120,100%,25%,0.5);
-  margin: -1px;
-  border-top: none;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.insert .insert {
-  color: #0c0;
-  background: transparent;
-  font-weight: bold;
-}
-
-.delete .delete {
-  color: #c00;
-  background: transparent;
-  font-weight: bold;
-}
-
-.change .change {
-  color: #88f;
-}
-
-.head .head {
-  color: #f4f;
-}
