@@ -133,74 +133,74 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
   }
 
   .decorator {
-    color: #B0B;
+    color: $magenta;
   }
 
   .definition {
-    color: #099;
+    color: $cyan;
     font-weight: bold;
   }
 
   .delimiter {
-    color: black;
+    color: $base01;
   }
 
   .directive {
-    color: #088;
+    color: $cyan;
     font-weight: bold;
   }
 
   .docstring {
-    color: #D42;
+    color: $orange;
   }
 
   .doctype {
-    color: #34b;
+    color: $blue;
   }
 
   .done {
     text-decoration: line-through;
-    color: gray;
+    color: $base01;
   }
 
   .entity {
-    color: #800;
+    color: $red;
     font-weight: bold;
   }
 
   .error {
-    color: #F00;
-    background-color: #FAA;
+    color: $base3;
+    background-color: $red;
   }
 
   .escape {
-    color: #666;
+    color: $base1;
   }
 
   .exception {
-    color: #C00;
+    color: $red;
     font-weight: bold;
   }
 
   .float {
-    color: #60E;
+    color: $violet;
   }
 
   .function {
-    color: #06B;
+    color: $blue;
     font-weight: bold;
     .delimiter {
-      color: #024;
+      color: $blue;
       font-weight: bold;
     }
   }
 
   .global-variable {
-    color: #d70;
+    color: $orange;
   }
 
   .hex {
-    color: #02b;
+    color: $blue;
   }
 
   .id {
@@ -227,7 +227,7 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
   }
 
   .integer {
-    color: #00D;
+    color: $cyan;
   }
 
   .imaginary {
