@@ -235,13 +235,13 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
   }
 
   .important {
-    color: #D00;
+    color: $red;
   }
 
   .key {
-    color: #606;
+    color: $violet;
     .char {
-      color: #60f;
+      color: $violet;
     }
     .delimiter {
       color: #404;
