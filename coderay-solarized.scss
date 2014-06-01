@@ -244,77 +244,75 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
       color: $violet;
     }
     .delimiter {
-      color: #404;
+      color: $violet;
     }
   }
 
   .keyword {
-    color: #080;
+    color: $green;
     font-weight: bold;
   }
 
   .label {
-    color: #970;
+    color: $yellow;
     font-weight: bold;
   }
 
   .local-variable {
-    color: #950;
+    color: $orange;
   }
 
   .map {
-    background-color: hsla(200,100%,50%,0.06);
     .content {
-      color: #808;
+      color: $violet;
     }
     .delimiter {
-      color: #40A;
+      color: $violet;
     }
   }
 
   .namespace {
-    color: #707;
+    color: $violet;
     font-weight: bold;
   }
 
   .octal {
-    color: #40E;
+    color: $violet;
   }
 
   .operator {
   }
 
   .predefined {
-    color: #369;
+    color: $blue;
     font-weight: bold;
     &-constant {
-      color: #069;
+      color: $blue;
     }
     &-type {
-      color: #0a8;
+      color: $green;
       font-weight: bold;
     }
   }
 
   .preprocessor {
-    color: #579;
+    color: $violet;
   }
 
   .pseudo-class {
-    color: #00C;
+    color: $blue;
     font-weight: bold;
   }
 
   .regexp {
-    background-color: hsla(300,100%,50%,0.06);
     .content {
-      color: #808;
+      color: $violet;
     }
     .delimiter {
-      color: #404;
+      color: $violet;
     }
     .modifier {
-      color: #C2C;
+      color: $violet;
     }
   }
 
