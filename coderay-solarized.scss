@@ -317,33 +317,31 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
   }
 
   .reserved {
-    color: #080;
+    color: $green;
     font-weight: bold;
   }
 
   .shell {
-    background-color: hsla(120,100%,50%,0.06);
     .content {
-      color: #2B2;
+      color: $green;
     }
     .delimiter {
-      color: #161;
+      color: $green;
     }
   }
 
   .string {
-    background-color: hsla(0,100%,50%,0.05);
     .char {
-      color: #b0b;
+      color: $magenta;
     }
     .content {
       color: $red;
     }
     .delimiter {
-      color: #710;
+      color: $red;
     }
     .modifier {
-      color: #E40;
+      color: $orange;
     }
   }
 
