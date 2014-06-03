@@ -346,38 +346,37 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
   }
 
   .symbol {
-    color: #A60;
+    color: $orange;
     .content {
-      color: #A60;
+      color: $orange;
     }
     .delimiter {
-      color: #740;
+      color: $orange;
     }
   }
 
   .tag {
-    color: #070;
+    color: $green;
     font-weight: bold;
   }
 
   .type {
-    color: #339;
+    color: $violet;
     font-weight: bold;
   }
 
   .value {
-    color: #088;
+    color: $cyan;
   }
 
   .variable {
-    color: #037;
+    color: $blue;
   }
 
   .insert {
-    background: hsla(120,100%,50%,0.12);
+    background-color: hsla(120,100%,50%,0.2);
     .insert {
-      color: #0c0;
-      background: transparent;
+      color: $green;
       font-weight: bold;
     }
     .eyecatcher {
