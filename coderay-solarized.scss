@@ -415,13 +415,12 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
   }
 
   .head {
-    color: #f8f;
-    background: #505;
+    color: $violet;
     .head {
-      color: #f4f;
+      color: $violet;
     }
     .filename {
-      color: white;
+      color: $violet;
     }
   }
 }// .Coderay
