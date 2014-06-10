@@ -15,21 +15,32 @@ $blue:      #268bd2;
 $cyan:      #2aa198;
 $green:     #859900;
 
+span.CodeRay {
+  white-space: pre;
+  border: 0px;
+  padding: 2px;
+}
+
+table.CodeRay { 
+  border-collapse: collapse;
+  width: 100%;
+  padding: 2px;
+
+  td {
+    padding: 2px 4px;
+    vertical-align: top;
+  }
+}
+
 .CodeRay {
   background-color: $base3;
   border: 1px solid $base00;
   color: $base00;
-}
-.CodeRay pre {
-  margin: 0px;
-}
 
-span.CodeRay { white-space: pre; border: 0px; padding: 2px; }
+  pre {
+    margin: 0px;
+  }
 
-table.CodeRay { border-collapse: collapse; width: 100%; padding: 2px; }
-table.CodeRay td { padding: 2px 4px; vertical-align: top; }
-
-.CodeRay {
   .line-numbers {
     background-color: $base2;
     color: $base1;
